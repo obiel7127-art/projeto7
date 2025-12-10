@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #ffb7e7; 
+    --secondary-color: #3a0066; 
+    --accent-color: #9d4edd; 
+    --glow: 0 0 12px #ff77ff, 0 0 22px #ffb3ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(135deg, #ffe0f7, #c8a7ff, #9ad7ff);
+    background-size: 300% 300%;
+    animation: anime-bg 10s ease infinite;
+    font: bold 2rem "Poppins", "Roboto", sans-serif;
+}
+
+
+@keyframes anime-bg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.todo {
+    display: flex;
+    width: 55vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+    padding-top: 40px;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+
